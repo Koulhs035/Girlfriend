@@ -1,0 +1,126 @@
+/* ------------------------ HEART SHAPED HR ------------------------ */
+
+.heart-line {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 2em;
+    background: linear-gradient(to right, black, gray, pink, white, pink, gray, black);
+    background-size: auto 2em;
+    background-repeat: repeat;
+    background-position: center;
+    background-clip: content-box;
+    position: relative;
+    margin-top: 2%;
+    margin-bottom: 5%;
+
+}
+
+.heart-line:before,
+.heart-line:after {
+    content: "❤️❤️❤️❤️❤️";
+    font-size: 1.2em;
+    position: absolute;
+    left: -3em;
+    right: -3em;
+    text-align: center;
+    margin: 0 auto;
+}
+
+.heart-line:before {
+    top: -0.5em;
+    animation: moveUp 3s ease-in-out infinite;
+}
+
+.heart-line:after {
+    bottom: -0.5em;
+    animation: moveDown 3s ease-in-out infinite;
+}
+
+@keyframes moveUp {
+    0% {
+        transform: translateY(0);
+    }
+
+    50% {
+        transform: translateY(-1em);
+    }
+
+    100% {
+        transform: translateY(0);
+    }
+}
+
+@keyframes moveDown {
+    0% {
+        transform: translateY(0);
+    }
+
+    50% {
+        transform: translateY(1em);
+    }
+
+    100% {
+        transform: translateY(0);
+    }
+}
+
+/*------------------------Countdown timer------------------------*/
+#countdown {
+    width: fit-content;
+    margin: 0 auto;
+    margin-top: 2%;
+    margin-bottom: 3%;
+    background-color: white;
+    border-radius: 20px;
+    padding: 20px;
+    text-align: center;
+}
+
+#countdown h1 {
+    font-size: 40px;
+    font-weight: bold;
+    margin-top: 0;
+}
+
+#countdown p {
+    font-size: 25px;
+    font-weight: bold;
+}
+
+#countdown span {
+    display: inline-block;
+    border: 2px solid #ff8c94;
+    padding: 10px;
+    margin: 10px;
+    border-radius: 10px;
+    font-size: 20px;
+}
+
+/*------------------------Beating heart------------------------*/
+.heart{
+    z-index: -100;
+    position: fixed;
+    top:50%;
+    left:50%;
+    transform: translate(-50%,-50%);
+}
+i{
+    color: #000;
+    font-size:100px;
+    text-shadow:0 0 10px red, 0 0 50px red;
+    animation: heartbeat 0.8s infinite;
+}
+@keyframes heartbeat {
+    0%{
+        transform: scale(1.10);
+    }
+    30%{
+        transform: scale(1.4);
+    }
+    60%{
+        transform: scale(1.9);
+    }
+}
+
+

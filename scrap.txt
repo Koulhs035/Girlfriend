@@ -1,0 +1,12 @@
+   <!--<div class="hidden">
+            <div class="storyImage"> 
+                <div class="gradient fit"> 
+                    <img src="photos\buttons\reddit2.jpg">
+                </div>
+            </div>
+
+            <fieldset class="CuteSet">
+                <div id="myDiv2"></div>
+            </fieldset>
+        </div>
+    </div>-->
