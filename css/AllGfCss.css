@@ -1,0 +1,53 @@
+/*------------------------Css for entire website------------------------*/
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0%;
+    overflow-x: hidden;
+    background-color: black;
+}
+
+
+/*------------------------Header------------------------*/
+header.SiteHeader {
+    background-color: black;
+    border: 1px solid silver;
+    width: 100%;
+    color: white;
+    margin-bottom: 2%;
+    text-align: center;
+
+}
+
+h1.SiteHeader {
+    padding: 2%;
+
+}
+
+
+/*------------------------Fonts------------------------*/
+/*sherif font*/
+.sherif {
+    font-family: "Poppins", sans-serif;
+}
+
+/*Calligraphic font*/
+.calligraphic {
+    font-family: 'Calligraffitti', cursive;
+}
+
+/*Cute font with hearts n stuff*/
+@font-face {
+    font-family: 'Unicorn Party';
+    src: url('../fonts/unicorn-party-font/UnicornParty-GOwlm.ttf');
+}
+
+.greekLove {
+    color: white;
+    font-family: 'Unicorn Party';
+}
