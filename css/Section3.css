@@ -67,14 +67,7 @@
 
 /*------------------------Countdown timer------------------------*/
 #countdown {
-    width: fit-content;
-    margin: 0 auto;
-    margin-top: 2%;
-    margin-bottom: 3%;
-    background-color: white;
     border-radius: 20px;
-    padding: 20px;
-    text-align: center;
 }
 
 #countdown h1 {

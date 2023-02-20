@@ -36,7 +36,7 @@
 <body>
     <!--Header-->
     <header class="SiteHeader">
-        <h1 class="SiteHeader calligraphic">To my girl, which I love very much :*</h1>
+        <h1 class="SiteHeader calligraphic">To my girl, who I love very much :*</h1>
         <p>σε αγαπάω Πιτσάκι μουυ &#60;3</p>
     </header>
 
@@ -94,13 +94,18 @@
         <a id="next"><span>Next❤️</span></a>
     </div>
 
+    <hr style="margin-bottom: 3%;">
     <div class="hidden greekLove centered">
-        <!--Image-->
-        <div class="storyImage" src="" alt="story Image">
-            <div class="gradient fit">
-                <img id="myImage" alt="display"> <!--Here-->
+
+        <!--The fieldset image goes on here-->
+        <div id="swipe"> <!--This is for the swipe animation-->
+            <div class="storyImage" src="" alt="story Image">
+                <div class="gradient fit">
+                    <img id="myImage" alt="display"> <!--And the image here-->
+                </div>
             </div>
         </div>
+
 
         <br>
         <!--Cute HR-->
@@ -109,37 +114,45 @@
             <span style="color: white;" class="calligraphic">──────<strong><ins>My thoughts</ins></strong>──────</span>
             <span style="color: pink;">❤️</span>
         </p>
-        <!--Text-->
+
+
+        <!--Fieldset for the text-->
         <fieldset class="CuteSet centered">
-            <div id="myDiv"></div> <!--Here-->
+            <div id="myDiv" style="text-align: center;"></div> <!--And the text goes here-->
         </fieldset>
     </div>
+    <hr style="margin-top: 5%; margin-bottom: 5%;">
 
-
+    <div class="two-buttons">
+        <a href="message_8.html"><span>Messages</span></a>
+    </div>
 
 
     <!--Countdown till meet day :) -->
-    <div id="countdown">
-        <h1 class="sherif">Θα ξαναβρεθούμε! &#60;3</h1>
-        <span>
-            <h2 id="days">0</h2>
-            <p>Days</p>
-        </span>
-        <span>
-            <h2 id="hours">0</h2>
-            <p>Hours</p>
-        </span>
-        <span>
-            <h2 id="minutes">0</h2>
-            <p>Minutes</p>
-        </span>
-        <span>
-            <h2 id="seconds">0</h2>
-            <p>Seconds</p>
-        </span>
+    <div class="storyImage" id="countdown" style="margin-bottom: 4%;">
+        <div class="gradient fit" id="countdown">
+            <h1 class="sherif">Θα ξαναβρεθούμε! &#60;3</h1>
+            <span>
+                <h2 id="days">0</h2>
+                <p>Days</p>
+            </span>
+            <span>
+                <h2 id="hours">0</h2>
+                <p>Hours</p>
+            </span>
+            <span>
+                <h2 id="minutes">0</h2>
+                <p>Minutes</p>
+            </span>
+            <span>
+                <h2 id="seconds">0</h2>
+                <p>Seconds</p>
+            </span>
+        </div>
     </div>
 
 
+    
     <!--JavaScript-->
     <script src="JavaScript\gf.js"></script>
     <script src="JavaScript\story.js"></script>

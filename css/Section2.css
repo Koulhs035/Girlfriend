@@ -29,7 +29,7 @@ fieldset.CuteSet {
     position: relative;
     z-index: 1;
     background-color: #4158D0;
-    background-image: linear-gradient(43deg, #4158D0 0%, #C850C0 46%, #FFCC70 100%);
+    background-image: linear-gradient(43deg, pink 46%, white 100%);
     filter: brightness(120%);
 }
 
@@ -40,7 +40,7 @@ fieldset.CuteSet {
     width: 100%;
     height: 100%;
     top: 0;
-    background-image: linear-gradient(43deg, #4158D0 0%, #C850C0 46%, #FFCC70 100%);
+    background-image: linear-gradient(rgba(255, 0, 0, 0.397) 0%, pink 46%, white 100%);
     filter: blur(20px);
 }
 
@@ -55,7 +55,7 @@ fieldset.CuteSet {
     padding: 0%;
 }
 
-.centered{
+.centered {
     width: fit-content;
     margin-left: auto;
     margin-right: auto;
@@ -63,15 +63,45 @@ fieldset.CuteSet {
 }
 
 /*Hides the element*/
-.hidden{
+.hidden {
     display: none;
 }
 
 /*------------------------NextButton------------------------*/
-.two-buttons{
+.two-buttons {
     display: flex;
     width: 100%;
 
     margin-bottom: 4%;
     justify-content: center;
+}
+
+/*------------------------Swiping Animation------------------------*/
+
+@keyframes swipeLeft {
+    from {
+        transform: translateX(500%);
+    }
+
+    to {
+        transform: translateX(0%);
+    }
+}
+
+.swipeL {
+    animation: swipeLeft 0.3s ease-in-out;
+}
+
+@keyframes swipeRight {
+    from {
+        transform: translateX(-500%);
+    }
+
+    to {
+        transform: translateX(0%);
+    }
+}
+
+.swipeR {
+    animation: swipeRight 0.3s ease-in-out;
 }
